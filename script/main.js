@@ -1,6 +1,6 @@
 $(function() {
   $.scrollify({
-		section:".panel",
+    section:".panel",
     scrollbars:false,
     before:function(i,panels) {
 
@@ -36,6 +36,18 @@ $(function() {
       $(".pagination a").on("click",$.scrollify.move);
     }
   });
+  
+  // on CTA button click, move to the next slide
+  $('.js-CTA').on('click', event => {
+    event.preventDefault(); //  prevent the anchor from navigating to "#" href
+    $.scrollify.next();
+  });
+  // $.scrollify.move("#name");
+
+  $('.js-asterisk').on('click', event => {
+    event.preventDefault();
+    $.scrollify.move("#CTA");
+  })
 });
 
 
@@ -105,4 +117,6 @@ $(function() {
     });
   };
 })(jQuery);
+
+
 
