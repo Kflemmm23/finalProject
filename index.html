@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="The Environmental Impact of Beef: An Infographic">
+		<meta name="description" content="The Environmental Impact of Animal Agriculture">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<meta property="og:title" content="Beef Production">
+		<meta property="og:title" content="Animal Agriculture">
 		<meta property="og:type" content="website">
 
 		<title>Beef Production</title>
@@ -13,7 +13,7 @@
 		<!--[if lt IE 9]>
 		<script src="script/html5shiv.min.js"></script>
 		<![endif]-->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Palanquin"/>
 		<link rel="stylesheet" href="styles/reset.css" />
 		<link rel="stylesheet" href="styles/styles.css" />
 
@@ -27,27 +27,31 @@
 					</div>
 				</div>
 				<div class="vertical-center main">
-					<div id="reg_ai">
-					</div>
-					<p class="cta"><a href="#" class="button js-CTA">What's the true cost of all this beef?</a></p>
+						<div class="animation-container" id="reg_ai"></div>
+					<p><a href="#" class="button js-CTA">Here's Why</a></p>
 				</div>
 			</div>
 		</section>
-		<section class="panel panel1 panel-white" data-section-name="water">
+		<section class="panel panel1 panel-white" data-section-name="climate">
 			<div class="inner columns">
 				<div class="vertical-center main">
-					<h1>Water</h1>
-					<p><span class="emphasis">5%</span> of water consumed in the US is used by private homes. <span class="emphasis">55%</span> of water consumed in the US is for animal agriculture.<span class="js-asterisk asterisk">*</span></p>
+					<h1>Greenhouse Gases</h1>
+					<p>Animal agriculture is responsible for <span class="emphasis">51%</span> of greenhouse gas emissions, more than the combined exhaust from all transportation (road, rail, air and marine) at <span class="emphasis2">13%</span>.<span class="js-asterisk asterisk">*</span></p>
+				</p>
 				</div>
 				<div class="graphics">
-					<div class="circle"></div>
+					<div class="circle">
+						<img src="images/climate.png" alt="C02 graph" height="400" width="400">
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="panel panel2 panel-white" data-section-name="land">
 			<div class="inner columns">
 				<div class="graphics">
-					<div class="circle"></div>
+					<div class="circle">
+						<img src="images/land.png" alt="land" height="400" width="400">
+					</div>
 				</div>
 				<div class="vertical-center main">
 					<h1>Land</h1>
@@ -55,26 +59,29 @@
 				</div>
 			</div>
 		</section>
-		<section class="panel panel3 panel-white" data-section-name="gases">
+		<section class="panel panel3 panel-white" data-section-name="water">
 			<div class="inner columns">
 				<div class="vertical-center main">
-					<h1>Greenhouse Gases</h1>
-					<p>Livestock and their byproducts account for at least 32,000 million tons of carbon dioxide (CO2) per year, or 51% of all worldwide greenhouse gas emissions.<span class="js-asterisk asterisk">*</span></p>
-				</p>
+					<h1>Water</h1>
+					<p><span class="emphasis2">5%</span> of water consumed in the US is used by private homes. <span class="emphasis">55%</span> of water consumed in the US is for animal agriculture.<span class="js-asterisk asterisk">*</span></p>
 				</div>
 				<div class="graphics">
-					<div class="circle"></div>
+					<div class="circle">
+						<img src="images/water.png" alt="water graph" height="400" width="400">
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="panel panel4 panel-white" data-section-name="oceans">
 			<div class="inner columns">
 				<div class="graphics">
-					<div class="circle"></div>
+					<div class="circle">
+						<img src="images/oceans.png" alt="quater pund burger" height="400" width="400">
+					</div>
 				</div>
 				<div class="vertical-center main">
 					<h1>Ocean Dead Zones</h1>
-					<p>Livestock operations on land have created more than 500 nitrogen-flooded ocean deadzones around the world.<span class="js-asterisk asterisk">*</span></p>
+					<p>Livestock operations on land have created more than <span class="emphasis">500</span> nitrogen-flooded ocean deadzones around the world.<span class="js-asterisk asterisk">*</span></p>
 				</div>
 			</div>
 		</section>
@@ -82,29 +89,60 @@
 			<div class="inner columns">
 				<div class="vertical-center main">
 					<h1>Deforestation</h1>
-					<p>Animal agriculture is responsible for up to 91% of Amazon destruction and is the leading cause of biodiversity loss.<span class="js-asterisk asterisk">*</span></p>
+					<p>Animal agriculture is responsible for up to <span class="emphasis">91%</span> of Amazon destruction and is the leading cause of biodiversity loss.<span class="js-asterisk asterisk">*</span></p>
 				</div>
 				<div class="graphics">
-					<div class="circle"></div>
+					<div class="circle">
+						<img src="images/deforestation.png" alt="deforestation" height="400" width="400">
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="panel panel6 panel-white" data-section-name="hunger">
+		<!-- <section class="panel panel6 panel-white" data-section-name="hunger">
 			<div class="inner columns">
 				<div class="graphics">
-					<div class="circle"></div>
+					<div class="circle">
+						<img src="images/burger.png" alt="quater pund burger" height="400" width="400">
+					</div>
 				</div>
 				<div class="vertical-center main">
 					<h1>Global Hunger</h1>
-					<p>Worldwide, at least 50% of grain is fed to livestock. We are currently growing enough food to feed 10 billion people.<span class="js-asterisk asterisk">*</span></p>
+					<p>Worldwide, at least <span class="emphasis">50%</span> of grain is fed to livestock. We are currently growing enough food to feed <span class="emphasis2">10 billion</span> people.<span class="js-asterisk asterisk">*</span></p>
+				</div>
+			</div>
+		</section> -->
+		<section class="panel panel7 panel-orange" data-section-name="action">
+			<div class="inner">
+				<div class="vertical-center2 main white-text">
+					<h1>What Can we Do?</h1><br></br>
+					<p>Animal agriculture runs on supply and demand.</p>
+						<p>We can make a difference by eating less animal products.</p>
+					<p><a href="http://www.cowspiracy.com/" class="button2" target="_blank">learn more</a></p>
+				</p>
 				</div>
 			</div>
 		</section>
-		<section class="panel panel7 panel-orange" data-section-name="CTA">
+			<section class="panel panel8 panel-grey regular-scroll" data-section-name="sources">
 			<div class="inner">
-				<div class="vertical-center">
-				<div>
-
+				<div class="sources white-text white-text-header">
+					<h1>Greenhouse Gases</h1><br></br>
+						<p2>Goodland, Robert & Anhang, Jeff. "Livestock and Climate Change: What if the key actors in climate change are...cows, pigs and chickens?". WorldWatch. November/December 2009</p2> <br></br>
+						<p2>"Livestock's Long Shadow: environmental issues and options". Food and Agriculture Organization of the United Nations. Rome 2006</p2><br></br><br></br>
+					<h1>Land</h1><br></br>
+						<p2>Goodland, Robert & Anhang, Jeff. "Livestock and Climate Change: What if the key actors in climate change are...cows, pigs and chickens?". WorldWatch. November/December 2009</p2> <br></br>
+						<p2>"Livestock's Long Shadow: environmental issues and options". Food and Agriculture Organization of the United Nations. Rome 2006</p2><br></br><br></br>
+					<h1>Water</h1><br></br>
+						<p2>Goodland, Robert & Anhang, Jeff. "Livestock and Climate Change: What if the key actors in climate change are...cows, pigs and chickens?". WorldWatch. November/December 2009</p2> <br></br>
+						<p2>"Livestock's Long Shadow: environmental issues and options". Food and Agriculture Organization of the United Nations. Rome 2006</p2><br></br><br></br>
+					<h1>Ocean Dead Zones</h1><br></br>
+						<p2>Goodland, Robert & Anhang, Jeff. "Livestock and Climate Change: What if the key actors in climate change are...cows, pigs and chickens?". WorldWatch. November/December 2009</p2> <br></br>
+						<p2>"Livestock's Long Shadow: environmental issues and options". Food and Agriculture Organization of the United Nations. Rome 2006</p2><br></br><br></br>
+					<h1>Deforestation</h1><br></br>
+						<p2>Goodland, Robert & Anhang, Jeff. "Livestock and Climate Change: What if the key actors in climate change are...cows, pigs and chickens?". WorldWatch. November/December 2009</p2> <br></br>
+						<!-- <p2>"Livestock's Long Shadow: environmental issues and options". Food and Agriculture Organization of the United Nations. Rome 2006</p2><br></br><br></br>
+					<h1>Global Hunger</h1><br></br>
+						<p2>Goodland, Robert & Anhang, Jeff. "Livestock and Climate Change: What if the key actors in climate change are...cows, pigs and chickens?". WorldWatch. November/December 2009</p2> <br></br>
+						<p2>"Livestock's Long Shadow: environmental issues and options". Food and Agriculture Organization of the United Nations. Rome 2006</p2><br></br><br></br> -->
 				</div>
 			</div>
 		</section>

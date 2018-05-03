@@ -1,11 +1,11 @@
 body {
 	color:#2a2f31;
 	font-size:62.5%;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Palanquin', sans-serif;
 	font-weight: 400;
 }
 h1 {
-	font-size:5em;
+	font-size:4.5em;
 	text-transform: uppercase;
 	font-weight: 900;
 }
@@ -15,12 +15,18 @@ h2 {
 p {
 	font-size: 3em;
 	line-height:1.3;
-	font-weight: 600;
+	font-weight: 500;
+}
+p2 {
+	font-size: 1.5em;
+	line-height:1.3;
+	font-weight: 500;
+	color:#ffffff;
 }
 .main a {
 	font-size: 3em;
 	line-height:1.3;
-	font-weight: 600;
+	font-weight: 400;
 }
 h2 + p {
 	font-size:3em;
@@ -28,7 +34,6 @@ h2 + p {
 /*FLEXBOX*/
 .wrapper{
   min-height: 100vh;
-  background: #ccc;
   display: flex;
   flex-flow: column;
 }
@@ -54,11 +59,23 @@ h2 + p {
   flex: 1;
   background: ;
 }
-
 .graphics{
   height:100%;
   width:35%;
   margin:0 auto;
+}
+.emphasis{
+	color: #f85d00;
+	font-weight: 600;
+}
+.emphasis2{
+	font-weight: 600;
+}
+.white-text-header h1 {
+	color:#ffffff;
+}
+.white-text p {
+	color:#ffffff;
 }
 
 /*GRAPHICS*/
@@ -91,7 +108,6 @@ h2 + p {
 .vertical-center p {
 	margin-top:23px;
 }
-
 .inner {
 	position: relative;
 	height:100%;
@@ -104,7 +120,10 @@ h2 + p {
 .panel-orange {
 	background-color:rgba(248,93,0);
 }
-
+.panel-grey {
+	background-color:rgba(42,47,49);
+/*	background-color:rgba(55,130,133);*/
+}
 .asterisk {
 	cursor: pointer;
 	transition: background-color 0.3s, color 0.3s;
@@ -165,13 +184,15 @@ h2 + p {
 	bottom:0;
 }
 
-/*CTA on first page*/
+
+/*Button on first page*/
 
 .vertical-center p.cta {
 	margin-top:5px;
 }
 .vertical-center a:link,
 .vertical-center a:visited {
+	font-weight:600;
 	color:#fffff;
 	text-transform: uppercase;
 	font-size:0.5em;
@@ -192,73 +213,87 @@ h2 + p {
 	background-color: #fb7523;
 }
 
-@media (max-width:800px) {
-	h1 {
-		font-size:12vw;;
-	}
-	h2 {
-		font-size:12vw;
-	}
-	.inner {
-		width:70%;
-
-	}
+/*BUTTON IN ACTION SECTION*/
+.button2 {
+	margin-top:60px;
+    background-color:#2a2f31; 
+    border: none;
+    border-radius: 4px;
+    color:#ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button2:hover {
+	background-color: #3a4042;
+}
+.vertical-center2 p.cta {
+	margin-top:5px;
+}
+.vertical-center2 a:link,
+.vertical-center2 a:visited {
+	font-weight:600;
+	color:#ffffff;
+	text-transform: uppercase;
+	font-size:0.5em;
+}
+/*.white-text h1{
+	color:#fffff;
+}
+*/
+/*SOURCES SECTION*/
+.sources{
+/*  width: 90%;*/
+  margin-top: 5%;
+  height:100%;
+  position:relative;
+  text-align: center;
+/*  flex: 1;*/
 }
 
-@media (max-width: 600px) {
-	.columns {
-		display: block;
-	}
 
-	.graphics {
-		height: auto;
-		width: calc(100% - 20px);
-	}
-	.circle {
-		transform: none;
-		height: auto;
-		width: calc(100% - 20px);
-	}
-	.vertical-center {
-		height: 50%;
-		width: 100%;
-		margin: 0;
-	}
-	.typewriter {
-		font-size: 12px;
-	}
+
+
+
+
+
+/*.vertical-center3 p.cta {
+	margin-top:5px;
+}*/
+/*.vertical-center3 a:link,
+.vertical-center3 a:visited {
+	background-color:none;
+	color:#ffffff;
+	font-size:0.5em;
 }
-/* 
+.vertical-center3 {
+	text-align:center;
+    width:100%;
+	position: relative;
+	top: 47%;
+	transform: translateY(-65%);
+}
+.vertical-center3 p {
+	margin-top:23px;
+}*/
+
+*/
+}
+
+ 
 FOR TYPING ANIMATION
-*/ 
-/*@font-face {
-	font-family: Roboto;
-	font-weight: 400;
-	font-style: normal;
+ 
+.animation-container{
+	height: 300px;
 }
-
-html,body{width: 100wh;
-	height: 100vh;
-	margin: 0;
-	overflow: hidden;
-	background:#202731;
-	font-family: roboto}*/
-
 .reg_ai{
 	display:table;
 	width:100%;
 	height: 100%;
 }
 
-/*h1{
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	color: #2a2f31;
-}*/
-/* ================================= *
- * AI Styling
- ==================================== */
  .typewriter:after {
   border-right: 0.05em solid #2a2f31;
   animation: caret_typewriter 1s steps(1) infinite;
@@ -273,4 +308,63 @@ html,body{width: 100wh;
   50% {
     border-color: transparent;
   }
+}
+
+MEDIA QUERIES
+@media (max-width:800px) {
+	h1 {
+		font-size:12vw;;
+	}
+	h2 {
+		font-size:12vw;
+	}
+	.inner {
+		width:70%;
+		img{
+		height: 90%;
+		width: 90%;
+	}
+	.columns {
+		display: block;
+	}
+	.graphics {
+		height: auto;
+		width: calc(100% - 20px);
+	}
+	.circle {
+		transform: none;
+		height: auto;
+		width: calc(100% - 20px);
+	}
+	.vertical-center {
+		width: 100%;
+	}
+	.typewriter {
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 600px) {
+	img{
+		height: 90%;
+		width: 90%;
+	}
+	.columns {
+		display: block;
+	}
+	.graphics {
+		height: auto;
+		width: calc(100% - 20px);
+	}
+	.circle {
+		transform: none;
+		height: auto;
+		width: calc(100% - 20px);
+	}
+	.vertical-center {
+		width: 100%;
+	}
+	.typewriter {
+		font-size: 25px;
+	}
 }

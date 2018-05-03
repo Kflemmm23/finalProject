@@ -46,16 +46,21 @@ $(function() {
 
   $('.js-asterisk').on('click', event => {
     event.preventDefault();
-    $.scrollify.move("#CTA");
+    $.scrollify.move("#sources");
   })
 });
+
+// Disable snap scroll for last section
+  $('.regular-scroll').on('target', event => {
+    $.scrollify.disable();
+  });
 
 
 
 //FOR TEXT ANIMATION
 
 (function($) {
-  var aiMsg = ["A quarter pound burger costs an average of $4.49.", "Americans eat about 3 burgers a week, nearly 50 billion per year."];
+  var aiMsg = ["At 270 lbs per person a year, Americans eat more meat than any other country.","Animal agriculture is the most destructive industry facing the planet today."];
 
   $(document).ready(function() {
     var inputAI = $("#reg_ai");
