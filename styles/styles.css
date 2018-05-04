@@ -1,3 +1,5 @@
+/*MAIN STYLES*/
+
 body {
 	color:#2a2f31;
 	font-size:62.5%;
@@ -31,7 +33,9 @@ p2 {
 h2 + p {
 	font-size:3em;
 }
+
 /*FLEXBOX*/
+
 .wrapper{
   min-height: 100vh;
   display: flex;
@@ -41,17 +45,9 @@ h2 + p {
 .columns{
   display: flex;
   flex: 1;
-
-
-/*  text-align: center;
-  width:35%;
-  top: 47%;
-  transform: translateY(-47%);
-  margin:0 auto;*/
 }
 
 .main{
-/*  width: 30%;*/
   margin-top: 20%;
   height:100%;
   position:relative;
@@ -79,6 +75,7 @@ h2 + p {
 }
 
 /*GRAPHICS*/
+
 .circle {
 	text-align: center;
     width:35%;
@@ -86,18 +83,15 @@ h2 + p {
 	top: 47%;
 	transform: translateY(-47%);
 	margin:0 auto;
-
 	width: 400px;
 	height: 400px;
-/*	background-color: #f85d00;*/
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
-/*	border-radius: 200px;*/
-
 	overflow: hidden;
 }
 
 /*SECTIONS*/
+
 .vertical-center {
 	text-align:center;
     width:50%;
@@ -122,7 +116,6 @@ h2 + p {
 }
 .panel-grey {
 	background-color:rgba(42,47,49);
-/*	background-color:rgba(55,130,133);*/
 }
 .asterisk {
 	cursor: pointer;
@@ -133,7 +126,7 @@ h2 + p {
 	color:#f85d00;
 }
 
- /*Right Section Indicators*/
+ /*RIGHT SECTION INDICATORS*/
 
 .pagination {
 	position:fixed;
@@ -184,8 +177,7 @@ h2 + p {
 	bottom:0;
 }
 
-
-/*Button on first page*/
+/*BUTTON ON FIRST PAGE*/
 
 .vertical-center p.cta {
 	margin-top:5px;
@@ -214,6 +206,7 @@ h2 + p {
 }
 
 /*BUTTON IN ACTION SECTION*/
+
 .button2 {
 	margin-top:60px;
     background-color:#2a2f31; 
@@ -239,54 +232,20 @@ h2 + p {
 	text-transform: uppercase;
 	font-size:0.5em;
 }
-/*.white-text h1{
-	color:#fffff;
-}
-*/
+
 /*SOURCES SECTION*/
+
 .sources{
-/*  width: 90%;*/
   margin-top: 5%;
   height:100%;
   position:relative;
   text-align: center;
-/*  flex: 1;*/
 }
-
-
-
-
-
-
-
-/*.vertical-center3 p.cta {
-	margin-top:5px;
-}*/
-/*.vertical-center3 a:link,
-.vertical-center3 a:visited {
-	background-color:none;
-	color:#ffffff;
-	font-size:0.5em;
-}
-.vertical-center3 {
-	text-align:center;
-    width:100%;
-	position: relative;
-	top: 47%;
-	transform: translateY(-65%);
-}
-.vertical-center3 p {
-	margin-top:23px;
-}*/
-
-*/
-}
-
  
-FOR TYPING ANIMATION
+/*FOR TYPING ANIMATION*/
  
 .animation-container{
-	height: 300px;
+	height: 125px;
 }
 .reg_ai{
 	display:table;
@@ -310,7 +269,8 @@ FOR TYPING ANIMATION
   }
 }
 
-MEDIA QUERIES
+/*MEDIA QUERIES*/
+
 @media (max-width:800px) {
 	h1 {
 		font-size:12vw;;

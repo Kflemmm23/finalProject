@@ -55,12 +55,10 @@ $(function() {
     $.scrollify.disable();
   });
 
-
-
 //FOR TEXT ANIMATION
 
 (function($) {
-  var aiMsg = ["At 270 lbs per person a year, Americans eat more meat than any other country.","Animal agriculture is the most destructive industry facing the planet today."];
+  var aiMsg = ["At 270 lbs per person a year, America eats more meat than any other country.","Animal agriculture is the most destructive industry facing the planet today."];
 
   $(document).ready(function() {
     var inputAI = $("#reg_ai");
@@ -86,6 +84,7 @@ $(function() {
   });
 
   //AI Text typer
+
   $.fn.writeText = function(content) {
     var elem = this;
     elem.addClass("typewriter");
@@ -105,6 +104,7 @@ $(function() {
   };
 
   //AI Text Typer backspace
+
   $.fn.removeText = function(content) {
     var elem = this;
     return new Promise(function(resolve, reject) {
